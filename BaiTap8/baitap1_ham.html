@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic function</title>
+    <style stype="text/css">
+        input[type="text"]{
+            width: 30px;
+        }
+    </style>
+    <script type="text/javascript" language="javascript">
+        function sub(){
+            var path = document.frm_subtract;
+            path.txt_result.value = path.txt_x.value - path.txt_y.value;
+        }
+    </script>
+</head>
+<body>
+    <h3>Subtract Form</h3>
+    <form name="frm_subtract" action="#" method="post">
+        <input type="text" name="txt_x" value="" /> -
+        <input type="text" name="txt_y" value="" /> =
+        <input type="text" name="txt_result" value="" readonly="readonly" />
+        <input type="button" name="btn_calculate" onclick="sub();" value="Calculate" />
+    </form>
+</body>
+</html>
